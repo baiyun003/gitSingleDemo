@@ -20,6 +20,7 @@
 + 文件上传到仓库
    + git add read.md
    + git commit -m "提交的注释"
+   + git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
    + **add和commit的区别，add反复提交，commit一次性提交所有add的文件
 + 查看状态
    + git status (查看有哪些文件进行可修改)
