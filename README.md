@@ -1,15 +1,14 @@
-# gitSingleDemo
-## **git的简单使用**
-### **一.从github上拉项目**
+# **git的简单使用**
+## **一.从github上拉项目**
  首先你要有一个你的github账号，然后在你的本地配置github的秘钥，相当于将你的本地电脑和github账号绑定。
  1. git config --global user.name "Your Name"（创建全局的用户名）
  2. git config --global user.email "email@163.com"（创建全局的邮箱地址）**这个邮箱地址可以和你的github地址不一样**
  3. ssh-keygen -t rsa -C "youremail@example.com"(生成秘钥)，**在你用cmd窗口打开的文件夹下，文件名和密码由你来定**
  4. 打开github下的setting右侧的ssh and gpgkeys 将生成好的秘钥复制粘贴title随意
  5. 在本地新建文件夹使用 `git clone 你想要拉的项目` 就ok了。
- ### **二.git的使用**
+ ## **二.git的使用**
  **教程是看的廖雪峰的，讲的很好，地址在这[git教程](https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192)**
- <font color="pink">总结一下</font>
+ **总结一下**
  <br/>
 &#160; &#160; &#160; &#160;**git是分布式版本控制工具**,
 他是没有中央版本控制器的，每个人的电脑上都有完整的项目，对于同一个文件，a同学修改了，b同学也修改了，两位只要分别把他们各自修改的内容推送给对方就可以保证版本的一致性。不过在实际开发中为了开发的进行，一般会新建一个中央仓库来管理所有代码。
