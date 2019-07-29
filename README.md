@@ -49,3 +49,9 @@
    + 解决冲突
       1. 两个不同的分支修改同一份文件合并的时候会冲突，方法就是解决冲突
    + 分支管理策略
+      + 实际开发过程中会见一个主版本稳定的master，然后所有人在dev下创建分支在dev上合并最后在合并到master上
+      + 使用git merge --no-ff -m '' dev形成分支信息
+      + git log --graph --pretty=oneline --abbrev-commit查看结构图
+   + bug分支
+      + 使用git stash保存当前工作区，新建分支修复bug后再切回原来工作区，使用git status查看工作区是干净的，使用git stash list命令查看
+      + 使用git stash pop或者 git stash apply 和git stash drop组合命令将stash存储的工作区删除，然后恢复原来的工作区
